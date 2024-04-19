@@ -7,12 +7,17 @@
 \method{plot}{xkcd}(x, ...)
 }
 \arguments{
-\item{x}{an \code{xkcd} object}
+\item{x}{an \code{\link{xkcd}} object}
 
-\item{...}{}
+\item{...}{currently ignored}
 }
 \description{
 Given an \code{\link{xkcd}} object, this \code{\link[base:plot]{base::plot}} method retrieves the image file associated with
-this comic from the xkcd website and displays it in the currently active graphics device (aka the
-plot window)
+this comic from the xkcd website and displays it in the currently active graphics device.
+}
+\examples{
+\dontrun{
+first_comic <- xkcd(1)
+plot(first_comic)
+}
 }
