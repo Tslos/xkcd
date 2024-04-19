@@ -6,6 +6,23 @@
 \usage{
 xkcd(number)
 }
+\arguments{
+\item{number}{A scalar numeric vector identifying an xkcd comic by number}
+}
+\value{
+A list of clas xkcd with the following elements:
+\itemize{
+\item num: a scalar muneric vector identifying the comic by number
+\item etc, etc, etc all other arguments (skipped for time in class)
+}
+
+Note that many of these elements may hold missing data
+}
 \description{
 This function retrieves a JSON object describing that comic from the official xkcd API.
+}
+\examples{
+first_comic <- xkcd(1)
+print(first_comic)
+
 }

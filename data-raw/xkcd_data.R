@@ -11,3 +11,5 @@ for (i in 1:10) {
 xkcd_data <- do.call(rbind, json_objects)
 xkcd_data <- as.data.frame(xkcd_data)
 usethis::use_data(xkcd_data, overwrite = TRUE)
+
+
